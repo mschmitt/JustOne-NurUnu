@@ -1,0 +1,49 @@
+body {
+	margin: 0;
+	font-family: sans-serif;
+	background: white;
+	color: black;
+	user-select: none;
+	cursor: default;
+}
+div.linio {
+	height: 18vh;
+	width: 100%;
+	overflow: hidden;
+	font-size: 15vh;
+}
+div.nombro,div.vorto {
+	line-height: 18vh;
+	height: 100%;
+	display: table-cell;
+	padding-left: 0.1em;
+	padding-right: 0.1em;
+}
+div.nombro {
+	background: darkgrey;
+	color: white;
+}
+div.vorto {
+	overflow: hidden;
+	white-space: nowrap;
+	width: 100%;
+	text-align: center;
+	cursor: pointer;
+}
+div#nova {
+	height: 10vh;
+	line-height: 10vh;
+	font-size: 8vh;
+	width: 100%;
+	background: darkgrey;
+	color: white;
+	text-align: center;
+	overflow: hidden;
+	white-space: nowrap;
+}
+span#nova_teksto {
+	cursor: pointer;
+}
+.griza {
+   	opacity: 0.1;
+}
