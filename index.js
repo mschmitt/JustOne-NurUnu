@@ -33,10 +33,9 @@ function legu_kartojn(json){
 }
 
 function elektu_karton(){
-	var cookie = Cookies.get('Restantaj Kartoj');
-	if (cookie){
-		ludotaj_kartoj = cookie.split(/,/);
-		console.log ('Trovis restantajn kartojn en kuketo: ' + ludotaj_kartoj);
+	if (localStorage.getItem('Restantaj Kartoj')){
+		ludotaj_kartoj = localStorage.getItem('Restantaj Kartoj').split(/,/);
+		console.log ('Trovis restantajn kartojn en loka memoro: ' + ludotaj_kartoj);
 	}
 	if (ludotaj_kartoj.length == 0){
 		for (var i = 0; i< kartoj.length; i++){
@@ -63,7 +62,7 @@ function elektu_karton(){
 
 	// persistigi la staton en URL kaj kuketoj
 	$(location).attr('hash', karta_nombro);
-	Cookies.set('Restantaj Kartoj', ludotaj_kartoj, { sameSite: 'strict' });
+	localStorage.setItem('Restantaj Kartoj', ludotaj_kartoj);
 
 	// enigi la vortojn
 	$('.vorto').each(function(indekso, elemento){
