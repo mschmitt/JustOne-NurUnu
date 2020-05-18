@@ -22,6 +22,7 @@ div.nombro,div.vorto {
 div.nombro {
 	background: darkgrey;
 	color: white;
+	border: 1px solid darkgrey;
 }
 div.vorto {
 	overflow: hidden;
