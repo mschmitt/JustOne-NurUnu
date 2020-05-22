@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	font-family: sans-serif;
-	background: white;
+	background: antiquewhite;
 	color: black;
 	user-select: none;
 	cursor: default;
@@ -20,9 +20,9 @@ div.nombro,div.vorto {
 	padding-right: 0.1em;
 }
 div.nombro {
-	background: darkgrey;
+	background: rosybrown;
 	color: white;
-	border: 1px solid darkgrey;
+	border: 1px solid rosybrown;
 }
 div.vorto {
 	overflow: hidden;
@@ -34,11 +34,11 @@ div.vorto {
 div#nova {
 	height: 10vh;
 	line-height: 10vh;
-	font-size: 8vh;
+	font-size: 5vh;
 	width: 100%;
-	background: darkgrey;
+	background: rosybrown;
 	color: white;
-	text-align: center;
+	text-align: right;
 	overflow: hidden;
 	white-space: nowrap;
 }
@@ -47,4 +47,19 @@ span#nova_teksto {
 }
 .griza {
    	opacity: 0.1;
+}
+.blua .nombro {
+	color: blue;
+}
+.verda .nombro {
+	color: green;
+}
+.rugxa .nombro {
+	color: red;
+}
+.orangxa .nombro {
+	color: orange;
+}
+.flava .nombro {
+	color: yellow;
 }
